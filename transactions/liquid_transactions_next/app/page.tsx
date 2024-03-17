@@ -44,38 +44,12 @@ export default async function Home() {
             <h3 style={{ cursor: "pointer", color: "#ffffff", fontFamily: "SourceSansPro, Helvetica,Arial,sans-serif", marginLeft: "3%" ,marginTop:"1%" }}>Blocks</h3>
             <h3 style={{ cursor: "pointer", color: "#ffffff", fontFamily: "SourceSansPro, Helvetica,Arial,sans-serif", marginLeft: "3%" ,marginTop:"1%" }}>Transactions</h3>
             <h3 style={{ cursor: "pointer", color: "#ffffff", fontFamily: "SourceSansPro, Helvetica,Arial,sans-serif", marginLeft: "3%" ,marginTop:"1%" }}>Assets</h3>
-            {/* <input
-              type="text"
-              placeholder="Search for block height, hash, transaction, or address"
-              style={{
-                marginLeft: "10%",
-                background: "rgb(10, 9, 9)",
-                textDecoration: "none",
-                color: "white",
-                borderRadius: "6px",
-                width: "300pt",
-                fontSize: "10pt",
-                height:"29pt",
-                textAlign:"center"
-              }}
-            />
-            &nbsp;&nbsp;&nbsp;
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="50"
-              fill="white"
-              className="bi bi-search"
-              viewBox="0 0 16 16"
-              cursor="pointer"
-            >
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg> */}
+            
             <form style={{ marginLeft: "10%", width: "400pt" }}>
               <div className="search-bar">
                 <input className="form-control search-bar-input" type="search" name="q" placeholder="Search for block height, hash, transaction, or address" aria-label="Search" />
                 
-                <a className="qrcode-link" href="scan-qr"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" color="#39434e" className="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                <a className="qrcode-link" style={{cursor:"pointer"}}><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" color="#39434e" className="bi bi-qr-code-scan" viewBox="0 0 16 16">
                   <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z" />
                   <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z" />
                   <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z" />
