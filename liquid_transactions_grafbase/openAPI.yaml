@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Blockstream Liquid Mempool API
+  version: 1.0.0
+paths:
+  /mempool/recent:
+    get:
+      summary: Get recent transactions in the Liquid mempool
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/transactions'
+components:
+  schemas:
+    transactions:
+      type: object
+      properties:
+        txid:
+          type: string
+          description: Transaction ID
+        fee:
+          type: number
+          description: Transaction fee
+        vsize:
+          type: integer
+          description: Virtual size of the transaction

@@ -1,0 +1,9 @@
+query Blockstream {
+  blockstream {
+    transactions {
+      txid
+      fee
+      vsize
+    }
+  }
+}
